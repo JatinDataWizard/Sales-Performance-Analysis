@@ -1,0 +1,27 @@
+## src/analysis.py
+import pandas as pd
+
+def load_data(file_path):
+    """Load sales data from a CSV file."""
+    return pd.read_csv(file_path)
+
+def analyze_sales(data):
+    """Analyze sales data and return summary statistics."""
+    total_sales = data['Sales'].sum()
+    total_revenue = data['Revenue'].sum()
+    average_sales = data['Sales'].mean()
+    average_revenue = data['Revenue'].mean()
+    
+    return {
+        'Total Sales': total_sales,
+        'Total Revenue': total_revenue,
+        'Average Sales': average_sales,
+        'Average Revenue': average_revenue
+    }
+
+if __name__ == "__main__":
+    data = load_data('../data/sales_data.csv')
+    summary = analyze_sales(data)
+    print("Sales Performance Summary:")
+    for key, value in summary.items():
+        print(f"{key}: {value}")
