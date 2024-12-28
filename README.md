@@ -19,16 +19,16 @@ The **Sales Performance Analysis** project is designed to provide insights into 
 
 ## Project Structure
 Sales-Performance-Analysis/
-├── data/
-│   └── sales_data.csv           # Sample sales data file (raw data)
-├── src/
-│   ├── analysis.py              # Script for analyzing sales data (data processing, statistics, etc.)
-│   └── visualization.py         # Script for visualizing sales data (charts, graphs, etc.)
-├── requirements.txt             # List of required Python packages (dependencies)
-├── README.md                    # Project documentation (overview, setup, usage)
-└── outputs/
-    ├── figures/                 # Folder to store generated visualizations (graphs, charts, etc.)
-    └── analysis_results.csv     # Folder for saved results from analysis, e.g., aggregated reports
+data/
+sales_data.csv           # Sample sales data file (raw data).
+ src/
+analysis.py              # Script for analyzing sales data (data processing, statistics, etc).
+visualization.py         # Script for visualizing sales data (charts, graphs, etc).
+requirements.txt             # List of required Python packages (dependencies).
+ README.md                    # Project documentation (overview, setup, usage).
+outputs/
+     figures/                 # Folder to store generated visualizations (graphs, charts, etc).
+     analysis_results.csv     # Folder for saved results from analysis, e.g., aggregated reports.
 
 ## Getting Started
 
