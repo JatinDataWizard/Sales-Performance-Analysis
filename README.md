@@ -25,8 +25,8 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/JatinDataWizard/Sales-Performance-Analysis.git
-  **Note:** Make sure to have the necessary libraries installed. You can add them to your requirements.txt file:
-      -pandas
-      -matplotlib
-      -seaborn
-      -jupyter
+**Note:** Make sure to have the necessary libraries installed. You can add them to your requirements.txt file:
+-pandas
+-matplotlib
+-seaborn
+   -jupyter
