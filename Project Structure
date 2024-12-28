@@ -1,0 +1,11 @@
+Sales-Performance-Analysis/
+│
+├── data/
+│   └── sales_data.csv
+│
+├── src/
+│   ├── analysis.py
+│   └── visualization.py
+│
+├── requirements.txt
+└── README.md
