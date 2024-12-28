@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def load_data(file_path):
+    """Load sales data from a CSV file."""
+    return pd.read_csv(file_path)
+
+def plot_sales(data):
+    """Plot sales and revenue over time."""
+    data['Date'] = pd.to_datetime(data['Date'])
+    plt.figure(figsize=(10, 5))
+    
+    plt.plot(data['Date'], data['Sales'], label='Sales', marker='o')
+    plt.plot(data['Date'], data['Revenue'], label='Revenue', marker='o')
+    
+    plt.title('Sales and Revenue Over Time')
+    plt.xlabel('Date')
+    plt.ylabel('Amount')
+    plt.legend()
+    plt.grid()
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+if __name__ == "__main__":
+    data = load_data('../data/sales_data.csv')
+    plot_sales(data)
